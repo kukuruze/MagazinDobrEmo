@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DobrEmo
 {
-    class RAM
+    class RAM : DataStorageDevice
     {
-        public int ram_id { get; set; }
-        public string ram_capacity { get; set; }
-        public int ram_quantity { get; set; }
-        public decimal ram_price { get; set; }
+
     }
 }

@@ -17,13 +17,25 @@ namespace DobrEmo
             InitializeComponent();
         }
 
-        private void FormStart_Load(object sender, EventArgs e)
+        private void labelGoToLogin_Click(object sender, EventArgs e)
         {
-            /*Tools.ShowHDDs();
-            Tools.ShowCPUs();
-            Tools.ShowGPUs();
-            Tools.ShowMotherBoards();
-            Tools.ShowRAMs();*/
+            Hide();
+            new FormLogin().Show();
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            string username = textBoxUserName.Text;
+            if(DataAccess.IsUsernameAlreadyInDatabase(username))
+            {
+                throw new ArgumentException("Username already in database");
+            }
+            else
+            {
+                //add to database
+            }
+            Hide();
+            new FormStoreStart().Show();
         }
     }
 }

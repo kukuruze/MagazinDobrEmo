@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DobrEmo
 {
-    class MotherBoard
+    class MotherBoard : DataProcessingDevice
     {
-        public int mother_board_id { get; set; }
-        public string mother_board_model { get; set; }
-        public int mother_board_quantity { get; set; }
-        public decimal mother_board_price { get; set; }
+
     }
 }

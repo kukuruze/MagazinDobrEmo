@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DobrEmo
 {
-    class SSD : DataStorageDevice
+    class DataStorageDevice : Device
     {
-
+        public string Capacity { get; set; }
     }
 }

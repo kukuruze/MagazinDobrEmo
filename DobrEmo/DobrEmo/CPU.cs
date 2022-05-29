@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DobrEmo
 {
-    class CPU
+    class CPU : DataProcessingDevice
     {
-        public int cpu_id { get; set; }
-        public string cpu_model { get; set; }
-        public int cpu_quantity { get; set; }
-        public decimal cpu_price { get; set; }
+
     }
 }

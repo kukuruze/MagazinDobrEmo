@@ -23,7 +23,7 @@ namespace DobrEmo
             richTextBox1.Text += "Mother Boards: \n";
             foreach (var item in motherBoards)
             {
-                richTextBox1.Text += $"ID: {item.mother_board_id}, Model: {item.mother_board_model}, Price: {item.mother_board_price}$ \n\n";
+                richTextBox1.Text += $"ID: {item.Id}, Model: {item.Model}, Price: {item.Price}$ \n\n";
             }
         }
 

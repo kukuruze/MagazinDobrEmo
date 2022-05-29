@@ -16,7 +16,7 @@ namespace DobrEmo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormStoreStart());
+            Application.Run(new FormStart());
         }
     }
 }

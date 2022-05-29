@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DobrEmo
 {
-    class GPU
+    class GPU : DataProcessingDevice
     {
-        public int gpu_id { get; set; }
-        public string gpu_model { get; set; }
-        public int gpu_quantity { get; set; }
-        public decimal gpu_price { get; set; }
+        
     }
 }

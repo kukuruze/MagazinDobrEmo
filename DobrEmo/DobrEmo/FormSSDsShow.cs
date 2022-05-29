@@ -23,7 +23,7 @@ namespace DobrEmo
             richTextBox1.Text += "SSDs: \n";
             foreach (var item in ssds)
             {
-                richTextBox1.Text += $"ID: {item.ssd_id}, Capacity: {item.ssd_capacity} TB, Price: {item.ssd_price}$ \n\n";
+                richTextBox1.Text += $"ID: {item.Id}, Model: {item.Capacity}, Price: {item.Price}$ \n\n";
             }
         }
 

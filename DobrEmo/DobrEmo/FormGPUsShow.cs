@@ -23,7 +23,7 @@ namespace DobrEmo
             richTextBox1.Text += "GPUs: \n";
             foreach (var item in gpus)
             {
-                richTextBox1.Text += $"ID: {item.gpu_id}, Model: {item.gpu_model}, Price: {item.gpu_price}$ \n\n";
+                richTextBox1.Text += $"ID: {item.Id}, Model: {item.Model}, Price: {item.Price}$ \n\n";
             }
         }
         private void buttonToStoreStart_Click(object sender, EventArgs e)

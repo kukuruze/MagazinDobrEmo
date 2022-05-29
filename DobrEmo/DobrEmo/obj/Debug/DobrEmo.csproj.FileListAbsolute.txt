@@ -31,3 +31,10 @@ E:\School\informatika\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormGPUsS
 E:\School\informatika\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormMotherBoardsShow.resources
 E:\School\informatika\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormRAMsShow.resources
 E:\School\informatika\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormSSDsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormCPUsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormGPUsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormHardDrivesShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormMotherBoardsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormRAMsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormSSDsShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormStoreStart.resources

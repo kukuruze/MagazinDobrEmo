@@ -58,5 +58,20 @@ namespace DobrEmo
                 return output;
             }
         }
+        public static bool IsUsernameAlreadyInDatabase(string username)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                if(connection.Query<string>($"select username from users").ToList().Contains(username))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
     }
 }
