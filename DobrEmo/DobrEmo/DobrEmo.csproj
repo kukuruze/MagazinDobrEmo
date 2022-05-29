@@ -50,19 +50,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CPU.cs" />
     <Compile Include="DataAccess.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormCPUsShow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormCPUsShow.Designer.cs">
+      <DependentUpon>FormCPUsShow.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGPUsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPUsShow.Designer.cs">
+      <DependentUpon>FormGPUsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHardDrivesShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHardDrivesShow.Designer.cs">
+      <DependentUpon>FormHardDrivesShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMotherBoardsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMotherBoardsShow.Designer.cs">
+      <DependentUpon>FormMotherBoardsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRAMsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRAMsShow.Designer.cs">
+      <DependentUpon>FormRAMsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSSDsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSDsShow.Designer.cs">
+      <DependentUpon>FormSSDsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStoreStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStoreStart.Designer.cs">
+      <DependentUpon>FormStoreStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPU.cs" />
     <Compile Include="HDD.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="MotherBoard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="RAM.cs" />
+    <Compile Include="SSD.cs" />
+    <EmbeddedResource Include="FormCPUsShow.resx">
+      <DependentUpon>FormCPUsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPUsShow.resx">
+      <DependentUpon>FormGPUsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardDrivesShow.resx">
+      <DependentUpon>FormHardDrivesShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMotherBoardsShow.resx">
+      <DependentUpon>FormMotherBoardsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRAMsShow.resx">
+      <DependentUpon>FormRAMsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSSDsShow.resx">
+      <DependentUpon>FormSSDsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStoreStart.resx">
+      <DependentUpon>FormStoreStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

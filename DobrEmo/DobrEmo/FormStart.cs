@@ -19,11 +19,11 @@ namespace DobrEmo
 
         private void FormStart_Load(object sender, EventArgs e)
         {
-            List<HDD> hdds = DataAccess.GetHDDs();
-            foreach (var item in hdds)
-            {
-                richTextBox1.Text += item.hdd_id + " " + item.hdd_capacity + " " + item.hdd_price + "\n";
-            }
+            /*Tools.ShowHDDs();
+            Tools.ShowCPUs();
+            Tools.ShowGPUs();
+            Tools.ShowMotherBoards();
+            Tools.ShowRAMs();*/
         }
     }
 }
