@@ -36,7 +36,7 @@ namespace DobrEmo
        .Replace("\u0449", "sch")
        .Replace("\u0437", "z")
        .Replace("\u0445", "h")
-       .Replace("\u044A", "\'")
+       .Replace("\u044A", "u")
        .Replace("\u0424", "F")
        .Replace("\u042B", "I")
        .Replace("\u0412", "V")
@@ -65,7 +65,7 @@ namespace DobrEmo
        .Replace("\u041C", "M")
        .Replace("\u0418", "I")
        .Replace("\u0422", "T")
-       .Replace("\u042C", "\'")
+       .Replace("\u042C", "i")
        .Replace("\u0411", "B")
        .Replace("\u042E", "YU")
        .Replace("\u044F", "ya")
@@ -74,7 +74,7 @@ namespace DobrEmo
        .Replace("\u043C", "m")
        .Replace("\u0438", "i")
        .Replace("\u0442", "t")
-       .Replace("\u044C", "\'")
+       .Replace("\u044C", "i")
        .Replace("\u0431", "b")
        .Replace("\u044E", "yu");
 
