@@ -83,6 +83,15 @@ namespace DobrEmo
             }
         }
 
+        public static void AddNewCartToDatabase(Cart cart)
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                string insertQuery = "INSERT INTO [MagazinDobrEmo].[dbo].[carts] (cart_id, cpu_id, cpu_quantity, gpu_id, gpu_quantity, hdd_id, hdd_quantity, ram_id, ram_quantity, ssd_id, ssd_quantity, mother_board_id, mother_board_quantity) VALUES(@cart_id, @cpu_id, @cpu_quantity, @gpu_id, @gpu_quantity, @hdd_id, @hdd_quantity, @ram_id, @ram_quantity, @ssd_id, @ssd_quantity, @mother_board_id, @mother_board_quantity)";
+                connection.Execute(insertQuery, cart);
+            }
+        }
+
         public static int GetNewCartId()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))

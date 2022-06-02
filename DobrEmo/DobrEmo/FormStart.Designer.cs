@@ -73,14 +73,16 @@ namespace DobrEmo
             this.textBoxPassword.Location = new System.Drawing.Point(235, 386);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(211, 31);
-            this.textBoxPassword.TabIndex = 3;
+            this.textBoxPassword.TabIndex = 4;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // textBoxConfirmPassword
             // 
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(235, 472);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(211, 31);
-            this.textBoxConfirmPassword.TabIndex = 4;
+            this.textBoxConfirmPassword.TabIndex = 5;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -131,7 +133,7 @@ namespace DobrEmo
             this.buttonRegister.Location = new System.Drawing.Point(215, 544);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(244, 63);
-            this.buttonRegister.TabIndex = 9;
+            this.buttonRegister.TabIndex = 6;
             this.buttonRegister.Text = "Регистриране";
             this.buttonRegister.UseVisualStyleBackColor = true;
             this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
@@ -166,7 +168,7 @@ namespace DobrEmo
             this.textBoxEmail.Location = new System.Drawing.Point(235, 296);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(211, 31);
-            this.textBoxEmail.TabIndex = 11;
+            this.textBoxEmail.TabIndex = 3;
             // 
             // FormStart
             // 

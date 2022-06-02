@@ -26,6 +26,7 @@ namespace DobrEmo
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             string username = textBoxUserName.Text;
+            username = DataModifier.CyrillicToLatin(username);
             string email = textBoxEmail.Text;
             if(DataAccess.IsSomethingAlreadyInDatabase("Username",username))
             {
@@ -42,8 +43,10 @@ namespace DobrEmo
                 MessageBox.Show("Грешка! Паролите не съвпадат!");
                 return;
             }
-            Client newClient = new Client(username, email, textBoxPassword.Text, textBoxFullName.Text, DataAccess.GetNewCartId());
+            Client newClient = new Client(username, email, DataModifier.CyrillicToLatin(textBoxPassword.Text), DataModifier.CyrillicToLatin(textBoxFullName.Text), DataAccess.GetNewCartId());
+            Cart newCart = new Cart(DataAccess.GetNewCartId());
             DataAccess.AddNewClientToDatabase(newClient);
+            DataAccess.AddNewCartToDatabase(newCart);
             MessageBox.Show("Регистрацията е успешна!");
             Hide();
             new FormStoreStart().Show();

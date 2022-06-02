@@ -50,9 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="CPU.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="DataModifier.cs" />
     <Compile Include="DataStorageDevice.cs" />
     <Compile Include="Device.cs" />
     <Compile Include="FormCPUsShow.cs">
