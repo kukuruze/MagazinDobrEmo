@@ -40,13 +40,15 @@ namespace DobrEmo
             this.label5 = new System.Windows.Forms.Label();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.labelGoToLogin = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(181, 21);
+            this.label1.Location = new System.Drawing.Point(190, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 33);
             this.label1.TabIndex = 0;
@@ -54,28 +56,28 @@ namespace DobrEmo
             // 
             // textBoxFullName
             // 
-            this.textBoxFullName.Location = new System.Drawing.Point(220, 114);
+            this.textBoxFullName.Location = new System.Drawing.Point(235, 118);
             this.textBoxFullName.Name = "textBoxFullName";
             this.textBoxFullName.Size = new System.Drawing.Size(211, 31);
             this.textBoxFullName.TabIndex = 1;
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(220, 195);
+            this.textBoxUserName.Location = new System.Drawing.Point(235, 207);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(211, 31);
             this.textBoxUserName.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(220, 276);
+            this.textBoxPassword.Location = new System.Drawing.Point(235, 386);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(211, 31);
             this.textBoxPassword.TabIndex = 3;
             // 
             // textBoxConfirmPassword
             // 
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(220, 362);
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(235, 472);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(211, 31);
             this.textBoxConfirmPassword.TabIndex = 4;
@@ -84,7 +86,7 @@ namespace DobrEmo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(259, 88);
+            this.label2.Location = new System.Drawing.Point(274, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 23);
             this.label2.TabIndex = 5;
@@ -95,7 +97,7 @@ namespace DobrEmo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(271, 169);
+            this.label3.Location = new System.Drawing.Point(286, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 23);
             this.label3.TabIndex = 6;
@@ -106,7 +108,7 @@ namespace DobrEmo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(285, 250);
+            this.label4.Location = new System.Drawing.Point(300, 360);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 23);
             this.label4.TabIndex = 7;
@@ -117,7 +119,7 @@ namespace DobrEmo
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(247, 336);
+            this.label5.Location = new System.Drawing.Point(262, 446);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(168, 23);
             this.label5.TabIndex = 8;
@@ -126,7 +128,7 @@ namespace DobrEmo
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Location = new System.Drawing.Point(200, 434);
+            this.buttonRegister.Location = new System.Drawing.Point(215, 544);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(244, 63);
             this.buttonRegister.TabIndex = 9;
@@ -140,7 +142,7 @@ namespace DobrEmo
             this.labelGoToLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelGoToLogin.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGoToLogin.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelGoToLogin.Location = new System.Drawing.Point(474, 474);
+            this.labelGoToLogin.Location = new System.Drawing.Point(489, 584);
             this.labelGoToLogin.Name = "labelGoToLogin";
             this.labelGoToLogin.Size = new System.Drawing.Size(166, 23);
             this.labelGoToLogin.TabIndex = 10;
@@ -148,11 +150,31 @@ namespace DobrEmo
             this.labelGoToLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelGoToLogin.Click += new System.EventHandler(this.labelGoToLogin_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(308, 270);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 23);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Имейл";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(235, 296);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(211, 31);
+            this.textBoxEmail.TabIndex = 11;
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 524);
+            this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelGoToLogin);
             this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.label5);
@@ -186,6 +208,8 @@ namespace DobrEmo
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Label labelGoToLogin;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxEmail;
     }
 }
 

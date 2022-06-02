@@ -26,14 +26,25 @@ namespace DobrEmo
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             string username = textBoxUserName.Text;
-            if(DataAccess.IsUsernameAlreadyInDatabase(username))
+            string email = textBoxEmail.Text;
+            if(DataAccess.IsSomethingAlreadyInDatabase("Username",username))
             {
-                throw new ArgumentException("Username already in database");
+                MessageBox.Show("Грешка! Псевдонимът вече е зает!");
+                return;
             }
-            else
+            if (DataAccess.IsSomethingAlreadyInDatabase("Email", email))
             {
-                //add to database
+                MessageBox.Show("Грешка! Имейлът вече е зает!");
+                return;
+            }   
+            if(textBoxPassword.Text != textBoxConfirmPassword.Text)
+            {
+                MessageBox.Show("Грешка! Паролите не съвпадат!");
+                return;
             }
+            Client newClient = new Client(username, email, textBoxPassword.Text, textBoxFullName.Text, DataAccess.GetNewCartId());
+            DataAccess.AddNewClientToDatabase(newClient);
+            MessageBox.Show("Регистрацията е успешна!");
             Hide();
             new FormStoreStart().Show();
         }
