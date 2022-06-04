@@ -25,10 +25,15 @@ namespace DobrEmo
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
+            if (textBoxFullName.Text == "" || textBoxUserName.Text == "" || textBoxEmail.Text == "" || textBoxPassword.Text == "" || textBoxConfirmPassword.Text == "")
+            {
+                MessageBox.Show("Грешка! Някое от полетата не е запълнено!");
+                return;
+            }
             string username = textBoxUserName.Text;
             username = DataModifier.CyrillicToLatin(username);
             string email = textBoxEmail.Text;
-            if(DataAccess.IsSomethingAlreadyInDatabase("Username",username))
+            if(DataAccess.IsSomethingAlreadyInDatabase("Username", username))
             {
                 MessageBox.Show("Грешка! Псевдонимът вече е зает!");
                 return;

@@ -130,7 +130,7 @@ namespace DobrEmo
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Location = new System.Drawing.Point(215, 544);
+            this.buttonRegister.Location = new System.Drawing.Point(217, 544);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(244, 63);
             this.buttonRegister.TabIndex = 6;

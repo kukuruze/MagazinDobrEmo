@@ -104,7 +104,7 @@ namespace DobrEmo
                     }
                     break;
                 default:
-                    throw new ArgumentException("Invalid type!");
+                    throw new ArgumentException("Невалиден тип!");
             }
         }
         private void buttonToStoreStart_Click(object sender, EventArgs e)
