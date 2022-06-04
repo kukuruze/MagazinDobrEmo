@@ -56,5 +56,11 @@ namespace DobrEmo
         {
             Application.Exit();
         }
+
+        private void buttonCart_Click(object sender, EventArgs e)
+        {
+            new FormCart().Show();
+            Hide();
+        }
     }
 }

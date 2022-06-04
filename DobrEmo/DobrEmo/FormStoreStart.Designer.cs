@@ -36,6 +36,7 @@ namespace DobrEmo
             this.buttonRAMsShow = new System.Windows.Forms.Button();
             this.buttonExitApplication = new System.Windows.Forms.Button();
             this.buttonSSDsShow = new System.Windows.Forms.Button();
+            this.buttonCart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonHardDrivesShow
@@ -90,12 +91,14 @@ namespace DobrEmo
             // 
             // buttonExitApplication
             // 
-            this.buttonExitApplication.Location = new System.Drawing.Point(178, 377);
+            this.buttonExitApplication.BackColor = System.Drawing.Color.Crimson;
+            this.buttonExitApplication.ForeColor = System.Drawing.Color.White;
+            this.buttonExitApplication.Location = new System.Drawing.Point(48, 370);
             this.buttonExitApplication.Name = "buttonExitApplication";
             this.buttonExitApplication.Size = new System.Drawing.Size(186, 74);
             this.buttonExitApplication.TabIndex = 5;
-            this.buttonExitApplication.Text = "Exit";
-            this.buttonExitApplication.UseVisualStyleBackColor = true;
+            this.buttonExitApplication.Text = "Изход";
+            this.buttonExitApplication.UseVisualStyleBackColor = false;
             this.buttonExitApplication.Click += new System.EventHandler(this.buttonExitApplication_Click);
             // 
             // buttonSSDsShow
@@ -108,11 +111,24 @@ namespace DobrEmo
             this.buttonSSDsShow.UseVisualStyleBackColor = true;
             this.buttonSSDsShow.Click += new System.EventHandler(this.buttonSSDsShow_Click);
             // 
+            // buttonCart
+            // 
+            this.buttonCart.BackColor = System.Drawing.Color.Lime;
+            this.buttonCart.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonCart.Location = new System.Drawing.Point(298, 370);
+            this.buttonCart.Name = "buttonCart";
+            this.buttonCart.Size = new System.Drawing.Size(186, 74);
+            this.buttonCart.TabIndex = 7;
+            this.buttonCart.Text = "Количка";
+            this.buttonCart.UseVisualStyleBackColor = false;
+            this.buttonCart.Click += new System.EventHandler(this.buttonCart_Click);
+            // 
             // FormStoreStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 466);
+            this.Controls.Add(this.buttonCart);
             this.Controls.Add(this.buttonSSDsShow);
             this.Controls.Add(this.buttonExitApplication);
             this.Controls.Add(this.buttonRAMsShow);
@@ -121,7 +137,7 @@ namespace DobrEmo
             this.Controls.Add(this.buttonCPUsShow);
             this.Controls.Add(this.buttonHardDrivesShow);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormStoreStart";
             this.Text = "Menu";
             this.ResumeLayout(false);
@@ -137,5 +153,6 @@ namespace DobrEmo
         private System.Windows.Forms.Button buttonMotherBoardsShow;
         private System.Windows.Forms.Button buttonExitApplication;
         private System.Windows.Forms.Button buttonSSDsShow;
+        private System.Windows.Forms.Button buttonCart;
     }
 }

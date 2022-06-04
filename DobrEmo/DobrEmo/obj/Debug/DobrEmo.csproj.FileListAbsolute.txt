@@ -35,3 +35,4 @@ D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormStoreStart.resources
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormLogin.resources
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormForgotPassword.resources
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormSpecShow.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormCart.resources

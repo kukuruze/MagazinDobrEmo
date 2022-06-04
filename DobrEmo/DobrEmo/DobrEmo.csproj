@@ -58,6 +58,12 @@
     <Compile Include="DataModifier.cs" />
     <Compile Include="DataStorageDevice.cs" />
     <Compile Include="Device.cs" />
+    <Compile Include="FormCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCart.Designer.cs">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSpecShow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RAM.cs" />
     <Compile Include="SSD.cs" />
+    <EmbeddedResource Include="FormCart.resx">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSpecShow.resx">
       <DependentUpon>FormSpecShow.cs</DependentUpon>
     </EmbeddedResource>
