@@ -53,6 +53,7 @@
     <Compile Include="Cart.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="CPU.cs" />
+    <Compile Include="CurrentUser.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="DataModifier.cs" />
     <Compile Include="DataStorageDevice.cs" />
@@ -62,6 +63,12 @@
     </Compile>
     <Compile Include="FormCPUsShow.Designer.cs">
       <DependentUpon>FormCPUsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForgotPassword.Designer.cs">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGPUsShow.cs">
       <SubType>Form</SubType>
@@ -123,11 +130,17 @@
     <EmbeddedResource Include="FormCPUsShow.resx">
       <DependentUpon>FormCPUsShow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormForgotPassword.resx">
+      <DependentUpon>FormForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGPUsShow.resx">
       <DependentUpon>FormGPUsShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHardDrivesShow.resx">
       <DependentUpon>FormHardDrivesShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMotherBoardsShow.resx">
       <DependentUpon>FormMotherBoardsShow.cs</DependentUpon>

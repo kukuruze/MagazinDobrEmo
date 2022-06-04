@@ -38,3 +38,5 @@ D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormMotherBoardsShow.resourc
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormRAMsShow.resources
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormSSDsShow.resources
 D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormStoreStart.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormLogin.resources
+D:\MagazinDobrEmo\DobrEmo\DobrEmo\obj\Debug\DobrEmo.FormForgotPassword.resources

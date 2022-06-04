@@ -19,6 +19,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static List<CPU> GetCPUs()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -27,6 +28,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static List<GPU> GetGPUs()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -35,6 +37,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static List<MotherBoard> GetMotherBoards()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -43,6 +46,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static List<RAM> GetRAMs()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -51,6 +55,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static List<SSD> GetSSDs()
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -59,6 +64,7 @@ namespace DobrEmo
                 return output;
             }
         }
+
         public static bool IsSomethingAlreadyInDatabase(string targetKey, string targetValue)
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
@@ -71,6 +77,24 @@ namespace DobrEmo
                 {
                     return false;
                 }
+            }
+        }
+
+        public static List<Client> GetSpecificClient(string targetKey, string targetValue)
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                var output = connection.Query<Client>($"select * from clients where {targetKey} = '{targetValue}'").ToList();
+                return output;
+            }
+        }
+
+        public static IEnumerable<string> GetSpecificClientInfo(string targetKey, string targetValue, string specificInfo)
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                var output = connection.Query<string>($"select {specificInfo} from clients where {targetKey} = '{targetValue}'");
+                return output;
             }
         }
 
@@ -99,6 +123,14 @@ namespace DobrEmo
                 var output = connection.Query<int>($"select cart_id from carts ORDER BY cart_id DESC").ToArray();
                 if (output.Length == 0) return 1;
                 return output[0] + 1;
+            }
+        }
+
+        public static void UpdatePassword(string newPassword, string email)
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                connection.Query($"update clients set Password = '{newPassword}' where Email = '{email}'");
             }
         }
 
