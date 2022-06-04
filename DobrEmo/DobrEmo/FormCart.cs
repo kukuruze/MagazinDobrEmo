@@ -96,5 +96,32 @@ namespace DobrEmo
             richTextBox1.Text += $"Цялата сума на артикулите е: {sum:F2} лв.";
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cart emptyCart = new Cart(CurrentUser.Cart.cart_id);
+            CurrentUser.Cart = emptyCart;
+            DataAccess.UpdateCart();
+            MessageBox.Show("Количката бе изчистена!");
+            richTextBox1.Clear();
+            FormCart_Load(sender, e);
+
+        }
+
+        private void buttonPurchase_Click(object sender, EventArgs e)
+        {
+            Cart emptyCart = new Cart(CurrentUser.Cart.cart_id);
+            CurrentUser.Cart = emptyCart;
+            DataAccess.UpdateCart();
+            MessageBox.Show("Направихте поръчка!");
+            MessageBox.Show("Благодарим Ви, че се доверихте на Магазин \"ДобрЕмо!\"");
+            Application.Exit();
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FormStoreStart().Show();
+        }
     }
 }
