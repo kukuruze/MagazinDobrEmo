@@ -8,6 +8,13 @@ namespace DobrEmo
 {
     class GPU : DataProcessingDevice
     {
-        
+        public string InfoPrice()
+        {
+            return $"GPU №{this.Id}: {Model} \t {Price} лв.";
+        }
+        public string InfoNoPrice()
+        {
+            return $"GPU №{this.Id}: {Model}";
+        }
     }
 }

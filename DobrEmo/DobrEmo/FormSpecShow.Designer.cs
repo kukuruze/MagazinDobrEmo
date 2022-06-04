@@ -1,7 +1,7 @@
 ﻿
 namespace DobrEmo
 {
-    partial class FormCPUsShow
+    partial class FormSpecShow
     {
         /// <summary>
         /// Required designer variable.
@@ -30,39 +30,52 @@ namespace DobrEmo
         private void InitializeComponent()
         {
             this.buttonToStoreStart = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxPrice = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // buttonToStoreStart
             // 
-            this.buttonToStoreStart.Location = new System.Drawing.Point(210, 377);
+            this.buttonToStoreStart.Location = new System.Drawing.Point(278, 378);
             this.buttonToStoreStart.Name = "buttonToStoreStart";
-            this.buttonToStoreStart.Size = new System.Drawing.Size(214, 53);
+            this.buttonToStoreStart.Size = new System.Drawing.Size(213, 53);
             this.buttonToStoreStart.TabIndex = 3;
             this.buttonToStoreStart.Text = "To Menu";
             this.buttonToStoreStart.UseVisualStyleBackColor = true;
             this.buttonToStoreStart.Click += new System.EventHandler(this.buttonToStoreStart_Click);
             // 
-            // richTextBox1
+            // richTextBoxInfo
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(37, 33);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(551, 318);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.richTextBoxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBoxInfo.Location = new System.Drawing.Point(37, 33);
+            this.richTextBoxInfo.Name = "richTextBoxInfo";
+            this.richTextBoxInfo.ReadOnly = true;
+            this.richTextBoxInfo.Size = new System.Drawing.Size(512, 318);
+            this.richTextBoxInfo.TabIndex = 2;
+            this.richTextBoxInfo.Text = "";
             // 
-            // FormCPUsShow
+            // richTextBoxPrice
+            // 
+            this.richTextBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBoxPrice.Location = new System.Drawing.Point(560, 33);
+            this.richTextBoxPrice.Name = "richTextBoxPrice";
+            this.richTextBoxPrice.ReadOnly = true;
+            this.richTextBoxPrice.Size = new System.Drawing.Size(215, 318);
+            this.richTextBoxPrice.TabIndex = 4;
+            this.richTextBoxPrice.Text = "";
+            // 
+            // FormSpecShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(787, 468);
+            this.Controls.Add(this.richTextBoxPrice);
             this.Controls.Add(this.buttonToStoreStart);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBoxInfo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "FormCPUsShow";
-            this.Text = "FormCPUsShow";
+            this.Name = "FormSpecShow";
+            this.Text = "Specifications";
             this.Load += new System.EventHandler(this.FormCPUsShow_Load);
             this.ResumeLayout(false);
 
@@ -71,6 +84,7 @@ namespace DobrEmo
         #endregion
 
         private System.Windows.Forms.Button buttonToStoreStart;
-        public System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.RichTextBox richTextBoxInfo;
+        public System.Windows.Forms.RichTextBox richTextBoxPrice;
     }
 }

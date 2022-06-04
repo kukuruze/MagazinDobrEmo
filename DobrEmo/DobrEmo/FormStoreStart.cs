@@ -19,36 +19,36 @@ namespace DobrEmo
 
         private void buttonHardDrivesShow_Click(object sender, EventArgs e)
         {
-            new FormHardDrivesShow().Show();
+            new FormSpecShow("HDD").Show();
             Hide();
         }
 
         private void buttonCPUsShow_Click(object sender, EventArgs e)
         {
-            new FormCPUsShow().Show();
+            new FormSpecShow("CPU").Show();
             Hide();
         }
 
         private void buttonGPUsShow_Click(object sender, EventArgs e)
         {
-            new FormGPUsShow().Show();
+            new FormSpecShow("GPU").Show();
             Hide();
         }
 
         private void buttonMotherBoardsShow_Click(object sender, EventArgs e)
         {
-            new FormMotherBoardsShow().Show();
+            new FormSpecShow("Motherboard").Show();
             Hide();
         }
 
         private void buttonRAMsShow_Click(object sender, EventArgs e)
         {
-            new FormRAMsShow().Show();
+            new FormSpecShow("RAM").Show();
             Hide();
         }
         private void buttonSSDsShow_Click(object sender, EventArgs e)
         {
-            new FormSSDsShow().Show();
+            new FormSpecShow("SSD").Show();
             Hide();
         }
 

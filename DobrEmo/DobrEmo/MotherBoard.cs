@@ -8,6 +8,13 @@ namespace DobrEmo
 {
     class MotherBoard : DataProcessingDevice
     {
-
+        public string InfoPrice()
+        {
+            return $"Motherboard №{this.Id}: {Model} \t {Price} лв.";
+        }
+        public string InfoNoPrice()
+        {
+            return $"Motherboard №{this.Id}: {Model}";
+        }
     }
 }
