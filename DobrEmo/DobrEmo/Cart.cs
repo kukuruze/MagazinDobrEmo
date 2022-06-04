@@ -26,5 +26,10 @@ namespace DobrEmo
         {
             this.cart_id = cart_id;
         }
+
+        public Cart()
+        {
+
+        }
     }
 }

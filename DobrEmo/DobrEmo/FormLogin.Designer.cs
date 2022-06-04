@@ -54,7 +54,7 @@ namespace DobrEmo
             // textBoxUserName
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxUserName.Location = new System.Drawing.Point(188, 230);
+            this.textBoxUserName.Location = new System.Drawing.Point(191, 230);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(294, 47);
             this.textBoxUserName.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace DobrEmo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(237, 177);
+            this.label3.Location = new System.Drawing.Point(239, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 39);
             this.label3.TabIndex = 6;
@@ -88,7 +88,7 @@ namespace DobrEmo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(268, 323);
+            this.label4.Location = new System.Drawing.Point(270, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 39);
             this.label4.TabIndex = 7;
@@ -98,7 +98,7 @@ namespace DobrEmo
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxPassword.Location = new System.Drawing.Point(188, 365);
+            this.textBoxPassword.Location = new System.Drawing.Point(191, 365);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(294, 47);
             this.textBoxPassword.TabIndex = 4;

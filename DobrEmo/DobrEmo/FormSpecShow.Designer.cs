@@ -33,15 +33,18 @@ namespace DobrEmo
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.richTextBoxPrice = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.buttonAddToCart = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonToStoreStart
             // 
             this.buttonToStoreStart.Location = new System.Drawing.Point(37, 372);
             this.buttonToStoreStart.Name = "buttonToStoreStart";
-            this.buttonToStoreStart.Size = new System.Drawing.Size(110, 53);
+            this.buttonToStoreStart.Size = new System.Drawing.Size(128, 61);
             this.buttonToStoreStart.TabIndex = 3;
-            this.buttonToStoreStart.Text = "To Menu";
+            this.buttonToStoreStart.Text = "Към менюто";
             this.buttonToStoreStart.UseVisualStyleBackColor = true;
             this.buttonToStoreStart.Click += new System.EventHandler(this.buttonToStoreStart_Click);
             // 
@@ -69,16 +72,35 @@ namespace DobrEmo
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 383);
+            this.comboBox1.Location = new System.Drawing.Point(194, 384);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(329, 33);
             this.comboBox1.TabIndex = 5;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(529, 384);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(40, 31);
+            this.numericUpDown1.TabIndex = 6;
+            // 
+            // buttonAddToCart
+            // 
+            this.buttonAddToCart.Location = new System.Drawing.Point(595, 363);
+            this.buttonAddToCart.Name = "buttonAddToCart";
+            this.buttonAddToCart.Size = new System.Drawing.Size(165, 70);
+            this.buttonAddToCart.TabIndex = 7;
+            this.buttonAddToCart.Text = "Добави в количката";
+            this.buttonAddToCart.UseVisualStyleBackColor = true;
+            this.buttonAddToCart.Click += new System.EventHandler(this.buttonAddToCart_Click);
             // 
             // FormSpecShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 468);
+            this.Controls.Add(this.buttonAddToCart);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBoxPrice);
             this.Controls.Add(this.buttonToStoreStart);
@@ -88,6 +110,7 @@ namespace DobrEmo
             this.Name = "FormSpecShow";
             this.Text = "Specifications";
             this.Load += new System.EventHandler(this.FormSpecs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +121,7 @@ namespace DobrEmo
         public System.Windows.Forms.RichTextBox richTextBoxInfo;
         public System.Windows.Forms.RichTextBox richTextBoxPrice;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button buttonAddToCart;
     }
 }

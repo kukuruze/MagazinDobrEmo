@@ -138,8 +138,17 @@ namespace DobrEmo
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
             {
-                Cart cart = connection.Query<Cart>($"select * from carts where cart_id = {id}").First();
-                return cart;
+                var output = connection.Query<Cart>($"select * from carts where cart_id = {id}").ToList();
+                return output[0];
+            }
+        }
+
+        public static void UpdateCart()
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                string updateQuery = $"UPDATE [MagazinDobrEmo].[dbo].[carts] set cpu_id = @cpu_id, cpu_quantity = @cpu_quantity, gpu_id = @gpu_id, gpu_quantity = @gpu_quantity, hdd_id = @hdd_id, hdd_quantity = @hdd_quantity, ram_id = @ram_id, ssd_quantity = @ssd_quantity, mother_board_id = @mother_board_id, mother_board_quantity = @mother_board_quantity where cart_id = @cart_id";
+                connection.Execute(updateQuery, CurrentUser.Cart);
             }
         }
     }
