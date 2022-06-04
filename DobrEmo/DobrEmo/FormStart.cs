@@ -47,6 +47,8 @@ namespace DobrEmo
             Cart newCart = new Cart(DataAccess.GetNewCartId());
             DataAccess.AddNewClientToDatabase(newClient);
             DataAccess.AddNewCartToDatabase(newCart);
+            CurrentUser.Client = DataAccess.GetSpecificClient("Username", username)[0];
+            CurrentUser.Cart = DataAccess.GetCartById(CurrentUser.Client.Cart_id);
             MessageBox.Show("Регистрацията е успешна!");
             Hide();
             new FormStoreStart().Show();

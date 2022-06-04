@@ -8,6 +8,7 @@ namespace DobrEmo
 {
     static class CurrentUser
     {
-        public static Client CurrentClient { get; set; }
+        public static Client Client { get; set; }
+        public static Cart Cart { get; set; }
     }
 }

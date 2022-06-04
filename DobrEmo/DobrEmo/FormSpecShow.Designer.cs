@@ -32,13 +32,14 @@ namespace DobrEmo
             this.buttonToStoreStart = new System.Windows.Forms.Button();
             this.richTextBoxInfo = new System.Windows.Forms.RichTextBox();
             this.richTextBoxPrice = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonToStoreStart
             // 
-            this.buttonToStoreStart.Location = new System.Drawing.Point(278, 378);
+            this.buttonToStoreStart.Location = new System.Drawing.Point(37, 372);
             this.buttonToStoreStart.Name = "buttonToStoreStart";
-            this.buttonToStoreStart.Size = new System.Drawing.Size(213, 53);
+            this.buttonToStoreStart.Size = new System.Drawing.Size(110, 53);
             this.buttonToStoreStart.TabIndex = 3;
             this.buttonToStoreStart.Text = "To Menu";
             this.buttonToStoreStart.UseVisualStyleBackColor = true;
@@ -64,11 +65,21 @@ namespace DobrEmo
             this.richTextBoxPrice.TabIndex = 4;
             this.richTextBoxPrice.Text = "";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(171, 383);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(329, 33);
+            this.comboBox1.TabIndex = 5;
+            // 
             // FormSpecShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 468);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBoxPrice);
             this.Controls.Add(this.buttonToStoreStart);
             this.Controls.Add(this.richTextBoxInfo);
@@ -76,7 +87,7 @@ namespace DobrEmo
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormSpecShow";
             this.Text = "Specifications";
-            this.Load += new System.EventHandler(this.FormCPUsShow_Load);
+            this.Load += new System.EventHandler(this.FormSpecs_Load);
             this.ResumeLayout(false);
 
         }
@@ -86,5 +97,6 @@ namespace DobrEmo
         private System.Windows.Forms.Button buttonToStoreStart;
         public System.Windows.Forms.RichTextBox richTextBoxInfo;
         public System.Windows.Forms.RichTextBox richTextBoxPrice;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -40,10 +40,11 @@ namespace DobrEmo
                 MessageBox.Show("Невалидни входни данни! Моля опитайте отново!");
                 return;
             }
+            CurrentUser.Client = DataAccess.GetSpecificClient("Username", username)[0];
+            CurrentUser.Cart = DataAccess.GetCartById(CurrentUser.Client.Cart_id);
 
-            CurrentUser.CurrentClient = DataAccess.GetSpecificClient("Username", username)[0];
 
-            MessageBox.Show($"Current user is {CurrentUser.CurrentClient.Fullname}");
+            MessageBox.Show($"Current user is {CurrentUser.Client.Fullname}");
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)

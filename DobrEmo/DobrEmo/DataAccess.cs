@@ -134,5 +134,13 @@ namespace DobrEmo
             }
         }
 
+        public static Cart GetCartById(int id)
+        {
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
+            {
+                Cart cart = connection.Query<Cart>($"select * from carts where cart_id = {id}").First();
+                return cart;
+            }
+        }
     }
 }

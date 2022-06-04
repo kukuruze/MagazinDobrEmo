@@ -23,7 +23,7 @@ namespace DobrEmo
             InitializeComponent();
         }
 
-        private void FormCPUsShow_Load(object sender, EventArgs e)
+        private void FormSpecs_Load(object sender, EventArgs e)
         {
             richTextBoxInfo.Text += $"{hardwareSpec}s: \n";
             richTextBoxPrice.Text += $"Цени: \n";
@@ -34,7 +34,8 @@ namespace DobrEmo
                     List<CPU> cpus = DataAccess.GetCPUs();
                     foreach (var item in cpus)
                     {
-                        richTextBoxInfo.Text += item.InfoNoPrice() + "\n"; 
+                        richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach(var item in cpus)
                     {
@@ -46,17 +47,20 @@ namespace DobrEmo
                     foreach (var item in gpus)
                     {
                         richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach (var item in gpus)
                     {
                         richTextBoxPrice.Text += $"№{item.Id}: " + item.Price + " лв.\n";
                     }
+
                     break;
                 case "Motherboard":
                     List<MotherBoard> motherboards = DataAccess.GetMotherBoards();
                     foreach (var item in motherboards)
                     {
                         richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach (var item in motherboards)
                     {
@@ -68,6 +72,7 @@ namespace DobrEmo
                     foreach (var item in hdds)
                     {
                         richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach (var item in hdds)
                     {
@@ -79,6 +84,7 @@ namespace DobrEmo
                     foreach (var item in rams)
                     {
                         richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach (var item in rams)
                     {
@@ -90,6 +96,7 @@ namespace DobrEmo
                     foreach (var item in ssds)
                     {
                         richTextBoxInfo.Text += item.InfoNoPrice() + "\n";
+                        comboBox1.Items.Add(item.InfoNoPrice());
                     }
                     foreach (var item in ssds)
                     {
