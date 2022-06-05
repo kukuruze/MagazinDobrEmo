@@ -20,7 +20,6 @@ namespace DobrEmo
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string username = textBoxUserName.Text;
-            Program.userName = username;
             username = DataModifier.CyrillicToLatin(username);
             if(!DataAccess.IsSomethingAlreadyInDatabase("Username",username))
             {
@@ -34,15 +33,15 @@ namespace DobrEmo
             {
                 MessageBox.Show("Успешно влизане в системата!");
                 Hide();
+                CurrentUser.Client = DataAccess.GetSpecificClient("Username", username)[0];
+                CurrentUser.Cart = DataAccess.GetCartById(CurrentUser.Client.Cart_id);
                 new FormStoreStart().Show();
             }
             else
             {
                 MessageBox.Show("Невалидни входни данни! Моля опитайте отново!");
                 return;
-            }
-            CurrentUser.Client = DataAccess.GetSpecificClient("Username", username)[0];
-            CurrentUser.Cart = DataAccess.GetCartById(CurrentUser.Client.Cart_id);
+            }   
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)

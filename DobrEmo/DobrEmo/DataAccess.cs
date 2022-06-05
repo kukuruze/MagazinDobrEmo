@@ -147,7 +147,7 @@ namespace DobrEmo
         {
             using (IDbConnection connection = new SqlConnection(Helper.CnnVal("MagazinDobrEmo")))
             {
-                string updateQuery = $"UPDATE [MagazinDobrEmo].[dbo].[carts] set cpu_id = @cpu_id, cpu_quantity = @cpu_quantity, gpu_id = @gpu_id, gpu_quantity = @gpu_quantity, hdd_id = @hdd_id, hdd_quantity = @hdd_quantity, ram_id = @ram_id, ssd_quantity = @ssd_quantity, mother_board_id = @mother_board_id, mother_board_quantity = @mother_board_quantity where cart_id = @cart_id";
+                string updateQuery = $"UPDATE [MagazinDobrEmo].[dbo].[carts] set cpu_id = @cpu_id, cpu_quantity = @cpu_quantity, gpu_id = @gpu_id, gpu_quantity = @gpu_quantity, hdd_id = @hdd_id, hdd_quantity = @hdd_quantity, ram_id = @ram_id, ram_quantity = @ram_quantity, ssd_id = @ssd_id, ssd_quantity = @ssd_quantity, mother_board_id = @mother_board_id, mother_board_quantity = @mother_board_quantity where cart_id = @cart_id";
                 connection.Execute(updateQuery, CurrentUser.Cart);
             }
         }

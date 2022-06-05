@@ -33,6 +33,11 @@ namespace DobrEmo
             string username = textBoxUserName.Text;
             username = DataModifier.CyrillicToLatin(username);
             string email = textBoxEmail.Text;
+            if(!Validator.EmailIsValid(email))
+            {
+                MessageBox.Show("Грешка! Имейлът е невалиден!");
+                return;
+            }
             if(DataAccess.IsSomethingAlreadyInDatabase("Username", username))
             {
                 MessageBox.Show("Грешка! Псевдонимът вече е зает!");
@@ -46,6 +51,12 @@ namespace DobrEmo
             if(textBoxPassword.Text != textBoxConfirmPassword.Text)
             {
                 MessageBox.Show("Грешка! Паролите не съвпадат!");
+                return;
+            }
+            string validpassword = Validator.ValidatePassword(textBoxPassword.Text);
+            if(validpassword != "")
+            {
+                MessageBox.Show(validpassword);
                 return;
             }
             Client newClient = new Client(username, email, DataModifier.CyrillicToLatin(textBoxPassword.Text), DataModifier.CyrillicToLatin(textBoxFullName.Text), DataAccess.GetNewCartId());

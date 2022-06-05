@@ -9,7 +9,6 @@ namespace DobrEmo
 {
     public static class Program
     {
-        public static string userName;
         public static List<string> itemInfo;
         [STAThread]
         static void Main()

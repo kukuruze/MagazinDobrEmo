@@ -118,11 +118,11 @@ namespace DobrEmo
 
         private void buttonAddToCart_Click(object sender, EventArgs e)
         {
-            if (hardwareSpec == "RAM" || hardwareSpec == "SSD")
+            /*if (hardwareSpec == "RAM" || hardwareSpec == "SSD")
             {
                 MessageBox.Show("Количеството е било изчерпано! Извинете за неудобството!");
                 return;
-            }
+            }*/
             int index = comboBox1.SelectedIndex + 1;
             int quantity = Convert.ToInt32(numericUpDown1.Value);
             Cart cart = CurrentUser.Cart;

@@ -65,7 +65,7 @@ namespace DobrEmo
 
         private void FormStoreStart_Load(object sender, EventArgs e)
         {
-            labelUser.Text = $"Потребител: {DataAccess.GetSpecificClient("Username", Program.userName)[0].Fullname}";
+            labelUser.Text = $"Потребител: {DataAccess.GetSpecificClient("Username", CurrentUser.Client.Username)[0].Fullname}";
         }
     }
 }
