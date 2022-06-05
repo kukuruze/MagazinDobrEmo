@@ -62,5 +62,10 @@ namespace DobrEmo
             new FormCart().Show();
             Hide();
         }
+
+        private void FormStoreStart_Load(object sender, EventArgs e)
+        {
+            labelUser.Text = $"Потребител: {DataAccess.GetSpecificClient("Username", Program.userName)[0].Fullname}";
+        }
     }
 }

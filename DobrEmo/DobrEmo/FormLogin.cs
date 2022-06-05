@@ -20,6 +20,7 @@ namespace DobrEmo
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string username = textBoxUserName.Text;
+            Program.userName = username;
             username = DataModifier.CyrillicToLatin(username);
             if(!DataAccess.IsSomethingAlreadyInDatabase("Username",username))
             {
@@ -42,9 +43,6 @@ namespace DobrEmo
             }
             CurrentUser.Client = DataAccess.GetSpecificClient("Username", username)[0];
             CurrentUser.Cart = DataAccess.GetCartById(CurrentUser.Client.Cart_id);
-
-
-            MessageBox.Show($"Current user is {CurrentUser.Client.Fullname}");
         }
 
         private void labelNoAccount_Click(object sender, EventArgs e)

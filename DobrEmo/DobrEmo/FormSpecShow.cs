@@ -303,7 +303,7 @@ namespace DobrEmo
                     }
                     break;
                 default:
-                    throw new ArgumentException("Invalid type!");
+                    throw new ArgumentException("Невалиден тип!");
             }
             CurrentUser.Cart = cart;
             DataAccess.UpdateCart();

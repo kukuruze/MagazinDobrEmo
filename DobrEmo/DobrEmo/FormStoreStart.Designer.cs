@@ -37,11 +37,12 @@ namespace DobrEmo
             this.buttonExitApplication = new System.Windows.Forms.Button();
             this.buttonSSDsShow = new System.Windows.Forms.Button();
             this.buttonCart = new System.Windows.Forms.Button();
+            this.labelUser = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonHardDrivesShow
             // 
-            this.buttonHardDrivesShow.Location = new System.Drawing.Point(48, 53);
+            this.buttonHardDrivesShow.Location = new System.Drawing.Point(48, 95);
             this.buttonHardDrivesShow.Name = "buttonHardDrivesShow";
             this.buttonHardDrivesShow.Size = new System.Drawing.Size(186, 74);
             this.buttonHardDrivesShow.TabIndex = 0;
@@ -51,7 +52,7 @@ namespace DobrEmo
             // 
             // buttonCPUsShow
             // 
-            this.buttonCPUsShow.Location = new System.Drawing.Point(298, 53);
+            this.buttonCPUsShow.Location = new System.Drawing.Point(298, 95);
             this.buttonCPUsShow.Name = "buttonCPUsShow";
             this.buttonCPUsShow.Size = new System.Drawing.Size(186, 74);
             this.buttonCPUsShow.TabIndex = 1;
@@ -61,7 +62,7 @@ namespace DobrEmo
             // 
             // buttonGPUsShow
             // 
-            this.buttonGPUsShow.Location = new System.Drawing.Point(48, 163);
+            this.buttonGPUsShow.Location = new System.Drawing.Point(48, 205);
             this.buttonGPUsShow.Name = "buttonGPUsShow";
             this.buttonGPUsShow.Size = new System.Drawing.Size(186, 74);
             this.buttonGPUsShow.TabIndex = 2;
@@ -71,7 +72,7 @@ namespace DobrEmo
             // 
             // buttonMotherBoardsShow
             // 
-            this.buttonMotherBoardsShow.Location = new System.Drawing.Point(298, 163);
+            this.buttonMotherBoardsShow.Location = new System.Drawing.Point(298, 205);
             this.buttonMotherBoardsShow.Name = "buttonMotherBoardsShow";
             this.buttonMotherBoardsShow.Size = new System.Drawing.Size(186, 74);
             this.buttonMotherBoardsShow.TabIndex = 3;
@@ -81,7 +82,7 @@ namespace DobrEmo
             // 
             // buttonRAMsShow
             // 
-            this.buttonRAMsShow.Location = new System.Drawing.Point(48, 275);
+            this.buttonRAMsShow.Location = new System.Drawing.Point(48, 317);
             this.buttonRAMsShow.Name = "buttonRAMsShow";
             this.buttonRAMsShow.Size = new System.Drawing.Size(186, 74);
             this.buttonRAMsShow.TabIndex = 4;
@@ -93,7 +94,7 @@ namespace DobrEmo
             // 
             this.buttonExitApplication.BackColor = System.Drawing.Color.Crimson;
             this.buttonExitApplication.ForeColor = System.Drawing.Color.White;
-            this.buttonExitApplication.Location = new System.Drawing.Point(48, 370);
+            this.buttonExitApplication.Location = new System.Drawing.Point(48, 412);
             this.buttonExitApplication.Name = "buttonExitApplication";
             this.buttonExitApplication.Size = new System.Drawing.Size(186, 74);
             this.buttonExitApplication.TabIndex = 5;
@@ -103,7 +104,7 @@ namespace DobrEmo
             // 
             // buttonSSDsShow
             // 
-            this.buttonSSDsShow.Location = new System.Drawing.Point(298, 275);
+            this.buttonSSDsShow.Location = new System.Drawing.Point(298, 317);
             this.buttonSSDsShow.Name = "buttonSSDsShow";
             this.buttonSSDsShow.Size = new System.Drawing.Size(186, 74);
             this.buttonSSDsShow.TabIndex = 6;
@@ -115,7 +116,7 @@ namespace DobrEmo
             // 
             this.buttonCart.BackColor = System.Drawing.Color.Lime;
             this.buttonCart.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonCart.Location = new System.Drawing.Point(298, 370);
+            this.buttonCart.Location = new System.Drawing.Point(298, 412);
             this.buttonCart.Name = "buttonCart";
             this.buttonCart.Size = new System.Drawing.Size(186, 74);
             this.buttonCart.TabIndex = 7;
@@ -123,11 +124,21 @@ namespace DobrEmo
             this.buttonCart.UseVisualStyleBackColor = false;
             this.buttonCart.Click += new System.EventHandler(this.buttonCart_Click);
             // 
+            // labelUser
+            // 
+            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelUser.Location = new System.Drawing.Point(26, 9);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(492, 76);
+            this.labelUser.TabIndex = 8;
+            this.labelUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormStoreStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 466);
+            this.ClientSize = new System.Drawing.Size(544, 516);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.buttonCart);
             this.Controls.Add(this.buttonSSDsShow);
             this.Controls.Add(this.buttonExitApplication);
@@ -140,6 +151,7 @@ namespace DobrEmo
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormStoreStart";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.FormStoreStart_Load);
             this.ResumeLayout(false);
 
         }
@@ -154,5 +166,6 @@ namespace DobrEmo
         private System.Windows.Forms.Button buttonExitApplication;
         private System.Windows.Forms.Button buttonSSDsShow;
         private System.Windows.Forms.Button buttonCart;
+        private System.Windows.Forms.Label labelUser;
     }
 }
